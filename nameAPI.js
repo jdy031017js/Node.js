@@ -4,7 +4,7 @@ const port = 999
 var cors = require('cors') //cors를 req로 불러오기
 // 동물 API 서버 완성
 
-app.use(cors()) //이 서버에 대해서 cors를 사용하겠다. ()안에 조건 넣을 수 있음, 비워두면 모든 요청 허용node
+// app.use(cors()) //이 서버에 대해서 cors를 사용하겠다. ()안에 조건 넣을 수 있음, 비워두면 모든 요청 허용node
  
 app.get('/sound/:name', function (req, res) {
     const { name } = req.params //더 간략화 버전 name에 한번에 넣기
